@@ -7,7 +7,61 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div id="game-board"></div>
+    <div id="container">
+      <h1>𝑀𝑒𝓂𝑜𝓇𝓎 𝒢𝒶𝓂𝑒</h1>
+      <div id="game-board"></div>
+    </div>
+
+    <div id="instructions">
+      <h2>How to Play:</h2>
+      <ol>
+        <li>
+          Click on any two cards to flip them over and reveal the letters on
+          their back sides.
+        </li>
+        <li>
+          If the letters on the two flipped cards match, those cards will remain
+          face up, indicating they have been successfully matched.
+        </li>
+        <li>
+          If the letters do not match, the cards will flip back over to their
+          face-down position after a short delay.
+        </li>
+        <li>
+          Continue flipping pairs of cards until all matching pairs have been
+          found.
+        </li>
+      </ol>
+      <h2>Rules:</h2>
+      <ul>
+        <li>Only two cards can be flipped at a time.</li>
+        <li>
+          If two flipped cards do not match, they will be flipped back over
+          after 1 second.
+        </li>
+        <li>The game ends when all pairs have been successfully matched.</li>
+      </ul>
+      <h2>Tips:</h2>
+      <ul>
+        <li>
+          Try to remember the positions and letters of previously flipped cards
+          to find matches more efficiently.
+        </li>
+        <li>
+          Start by flipping over different pairs each time to gain more
+          information about the card positions.
+        </li>
+      </ul>
+      <h2>Winning the Game:</h2>
+      <p>
+        You win the game when you have successfully matched all 8 pairs of
+        cards, and all cards are face up.
+      </p>
+      <p>
+        Enjoy playing the memory game and challenge yourself to complete it as
+        quickly as possible!
+      </p>
+    </div>
 
     <script src="script.js"></script>
   </body>

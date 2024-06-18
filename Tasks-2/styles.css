@@ -1,17 +1,28 @@
 body {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #f0f0f0;
   font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
-}
-body {
+  padding: 20px;
   background-image: url("img/1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #e9e6e6;
 }
 
 #game-board {
@@ -83,5 +94,38 @@ body {
 
   .card {
     font-size: 1.2em;
+  }
+}
+
+#instructions {
+  max-width: 800px;
+  width: 90vw;
+  margin: 20px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#instructions h2 {
+  margin-top: 0;
+}
+
+#instructions ol,
+#instructions ul {
+  margin-left: 20px;
+}
+
+#instructions p {
+  margin: 10px 0;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  #instructions {
+    padding: 10px;
   }
 }
